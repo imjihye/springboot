@@ -19,6 +19,8 @@ public class AppForDIFrontendComponentScan {
         try (ConfigurableApplicationContext context =
                      SpringApplication.run(AppForDIFrontendComponentScan.class)) {
             Frontend frontend = context.getBean(Frontend.class);
+
+            // app클레스가 commandLineRunner인터페이스를 구현하면 DI컨테이너가 app클레스에도 주입할 수 있음.
             frontend.run();
         }
     }
