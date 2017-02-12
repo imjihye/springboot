@@ -27,4 +27,7 @@ public class AppConfig {
     Frontend frontend(){
         return new Frontend();
     }
+
+    // Bean이 너무 많다! 매번 정의하기 번거롭다.
+    // 빈을 DI컨테이너에 자동으로 등록하는 컴포넌트 스캔기능을 사용해보자.
 }
