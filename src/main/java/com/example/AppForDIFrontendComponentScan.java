@@ -12,7 +12,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @EnableAutoConfiguration
 @ComponentScan
-// 이 클레스의 패키지 내부에 있는 모든 클레스를 검색한다. 검색조건은 @Component
+// 이 클레스의 패키지 내부에 있는 모든 클레스를 검색한다.
+// 검색대상은 @Component, @Service, @Contoller, @Repository @Configuration...
 // 따라서 빈을 정의해 둔 AppConfig클레스는 더이상 사용되지 않는다.
 public class AppForDIFrontendComponentScan {
     public static void main(String[] args){
