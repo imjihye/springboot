@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class Frontend {
     @Autowired
     ArgumentResolver argumentResolver;
-    @Autowired // DI컨테이너가 주입해야 할 필드.
+    @Autowired // DI컨테이너가 주입해야 할 필드. 자동으로 찾아내어 주입한다 => auto-wiring
     Calculator calculator;
 
     public void run(){

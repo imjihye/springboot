@@ -18,7 +18,7 @@ public class AppForDIArgument {
     public static void main(String[] args){
         try(ConfigurableApplicationContext context =
             SpringApplication.run(AppForDIArgument.class, args)){
-`
+
             System.out.print("Enter 2 numbers like 'a b' : ");
             ArgumentResolver argumentResolver = context.getBean(ArgumentResolver.class);
             Argument argument = argumentResolver.resolve(System.in);
